@@ -1,0 +1,36 @@
+pipeline
+{
+    agent any
+    environment
+    {
+        Age=24
+        Name="Aman"
+
+    }
+    stages
+    {
+        stage("chec userdefined vars")
+        {
+            steps
+            {
+
+               echo "$Age and $Name"
+
+
+
+            }
+
+
+
+
+        }
+
+
+
+
+    }
+
+
+
+
+}
