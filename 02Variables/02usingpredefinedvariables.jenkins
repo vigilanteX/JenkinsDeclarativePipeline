@@ -1,0 +1,24 @@
+pipeline
+{
+    agent any
+    stages{
+
+        stage("using predefined vars")
+        {
+            steps
+            {
+                echo "current build is $BUILD_NUMBER"
+
+
+
+            }
+
+        }
+
+
+
+
+
+
+    }
+}
