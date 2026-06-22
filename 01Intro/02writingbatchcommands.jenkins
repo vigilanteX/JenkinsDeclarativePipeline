@@ -1,0 +1,24 @@
+pipeline{
+    agent any
+    stages{
+
+        stage("check batch command")
+        {
+
+            steps{
+
+                bat "dir"
+
+
+
+
+
+            }
+
+        }
+
+
+
+    }
+
+}
