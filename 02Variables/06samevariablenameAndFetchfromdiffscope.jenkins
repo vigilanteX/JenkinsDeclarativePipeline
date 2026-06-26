@@ -1,0 +1,33 @@
+pipeline
+{
+    agent any
+    environment
+    {
+        name="Aman GLOBAL level"
+    }
+    stages
+    {
+
+
+        
+        stage("checker")
+        {
+        environment
+        {
+        name="Aman STAGE level"
+        }
+
+           steps
+           {
+            script
+            {
+                name="Aman STEP level"
+            }
+             
+             echo "${env.name}"
+
+           }
+
+        }
+    }
+}

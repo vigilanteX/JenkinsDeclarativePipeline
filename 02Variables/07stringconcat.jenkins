@@ -1,0 +1,23 @@
+pipeline
+{
+    agent any
+    environment
+    {
+        name1="Aman"
+        name2="Dixit"
+    }
+    stages
+    {
+        stage("checker")
+        {
+            steps
+            {
+                script{
+                    fullName=name1+name2
+                }
+                echo "$fullName"
+
+            }
+        }
+    }
+}

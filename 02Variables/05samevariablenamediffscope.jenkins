@@ -1,0 +1,36 @@
+pipeline
+{
+
+ agent any
+ environment
+ {
+    name="Aman pipeline"
+ }
+
+ stages{
+ 
+ stage("checker stage")
+ {
+ environment
+ {
+    name="Aman env"
+ }
+   steps{
+
+      script{
+        name="aman script"
+      }
+      echo "$name"
+   }
+  
+ }
+
+
+
+
+
+ }
+
+
+
+}
